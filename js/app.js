@@ -5,7 +5,7 @@
 
 var App = function() {
 
- new TimerModule;
+ new DrumKitModule;
 }
 
 document.addEventListener('DOMContentLoaded', function() {

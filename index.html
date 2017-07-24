@@ -2,36 +2,52 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Timer</title>
+  <title>Drum Kit</title>
   <link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body>
 
   <div class="container"> 
-    <div class="wrap hours" data-title="Часы">
-      <span></span>
-      <canvas id="hoursCanvas" width="190" height="190" style="border: 2px solid #efc3cb;">
-Your browser does not support the HTML5 canvas tag.</canvas>
+    <div class="act drum1" data-src="sounds/drum1.wav" data-code="102" title="Кликните или нажмите на клавишу F"></div>
+    <div class="act drum2" data-src="sounds/drum2.wav" data-code="103" title="Кликните или нажмите на клавишу G"></div>
+    <div class="act drum3" data-src="sounds/drum3.wav" data-code="104" title="Кликните или нажмите на клавишу H"></div>
+    <div class="act drum4" data-src="sounds/drum1.wav" data-code="106" title="Кликните или нажмите на клавишу J"></div>
+    <div class="act drum5" data-src="sounds/drum3.wav" data-code="107" title="Кликните или нажмите на клавишу K"></div>
+    <div class="act cymbal1" data-src="sounds/cymbal1.wav" data-code="49" title="Кликните или нажмите на клавишу 1"></div>
+    <div class="act cymbal2" data-src="sounds/cymbal2.wav" data-code="50" title="Кликните или нажмите на клавишу 2"></div>
+  </div>
+
+  <div class="music_wrap">
+    <h4>Слушать музыку</h4>
+    <div>
+      <p>Nickelback - How You Remind Me</p>
+      <audio src="sounds/Nickelback_-_How_You_Remind_Me.mp3" controls></audio>
     </div>
-    <div class="wrap minutes" data-title="Минуты">
-      <span></span>
-      <canvas id="minutesCanvas" width="190" height="190" style="border: 2px solid #efc3cb;">
-Your browser does not support the HTML5 canvas tag.</canvas>
+    <div>
+      <p>NickelBack – Save Me</p>
+      <audio src="sounds/NickelBack_–_Save_me.mp3" controls></audio>
     </div>
-    <div class="wrap seconds" data-title="Секунды">
-      <span></span>
-      <canvas id="secondsCanvas" width="190" height="190" style="border: 2px solid #efc3cb;">
-Your browser does not support the HTML5 canvas tag.</canvas>
+    <div>
+      <p>The Rasmus - First Day Of My Life</p>
+      <audio src="sounds/The_Rasmus_-_First_Day_Of_My_Life.mp3" controls></audio>
+    </div>
+    <div>
+      <p>The Rasmus -In The Shadows</p>
+      <audio src="sounds/The_Rasmus-In_The_Shadows.mp3" controls></audio>
+    </div>
+    <div>
+      <p>30 Seconds to Mars - The Kill</p>
+      <audio src="sounds/30_Seconds_to_Mars_-_The_Kill.mp3" controls></audio>
+    </div>
+    <div>
+      <p>30 Seconds To Mars - A Beautiful Lie</p>
+      <audio src="sounds/30_Seconds_To_Mars_-_A_Beautiful_Lie.mp3" controls></audio>
     </div>
     
 
-
   </div>
 
-
-
-
-      <script src="js/app.js"></script>
-      <script src="js/modules/timer.js"></script>
+    <script src="js/app.js"></script>
+    <script src="js/modules/drumKit.js"></script>
 </body>
 </html>

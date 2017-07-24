@@ -1,84 +1,4 @@
-/*.container {
-	background: #f3f2fe;
-	border: 2px solid #07b9b2;
-	border-radius: 4px;
-	display: inline-block;
-	vertical-align: top;
-	width: 45%;
-	height: 400px;
-	overflow: auto;
-	padding: 10px;
-	margin-right: 25px;
-}
 
-.container button {
-	background: #07b9b2;
-
-	border: 2px solid #fff;
-	border-radius: 4px;
-	padding: 10px;
-	margin: 8px 10px;
-	min-width: 100px;
-	color: #fff;
-	font-weight: bold;
-	text-align: center;
-}
-
-.wrap_btn {
-	display: inline-block;
-	vertical-align: top;
-	width: 45%;
-}
-
-.warning {
-	position: relative;
-}
-
-.warning:before {
-	content:'Элемента с указанным именем класса нет!';
-	position: absolute;
-	top: -30px;
-	left: 0;
-	color: red;
-}
-
-.wrap_btn > button,
-.wrap_btn > input {
-	width: 300px;
-	margin-bottom: 15px;
-}
-
-.container > button:before {
-	content: attr(class);
-}
-.wrap_btn > input[type="text"] {
-	background: #fff;
-	border: 2px solid #07b9b2;
-	border-radius: 4px;
-	padding: 7px 3px 5px 15px;
-	font-size: 17px;
-}
-
-.wrap_btn > button{
-	background: #07b9b2;
-	border: 2px solid #fff;
-	border-radius: 4px;
-	color: #fff;
-	font-size: 17px;
-	font-weight: bold;
-	height: 40px;
-}
-
-button:hover {
-	box-shadow: 0 0 2px 1px #07b9b2;
-	cursor: pointer;
-	transition: all .3s;
-}
-
-input:focus,
-button:focus {
-	outline: none;
-}*/
 html,
 body {
 	height: 100%;
@@ -87,8 +7,6 @@ body {
 
 body {
 	background: #6e5460;
-	/*height: 1000px;*/
-	/*padding-top: 65px;*/
 }
 
 body,
@@ -99,71 +17,107 @@ body * {
 }
 
 .container {
+	background: url(img/pic6.png) no-repeat center top;
+    position: relative;
 	display: flex;
 	flex-flow: row nowrap;
 	justify-content: space-around;
 	align-items: center;
 	width: 62%;
 	height: 100%;
+	min-height: 700px;
     margin: 0 auto;
     
 }
+.act {
+	position: absolute;
+    /*border: 1px solid;*/
 
-.wrap {
-	
-	position: relative;
-	width: 198px;
-    height: 198px;
-    
-    text-align: center;
 }
 
-.wrap:after {
-	content: attr(data-title);
-	position: absolute;
-	right: 0;
-	bottom: -65px;
-	left: 0;
+.act:hover {
+	cursor: pointer;
+}
+
+.drum1 {
+	top: 269px;
+    left: 106px;
+    width: 166px;
+    height: 190px;
+}
+
+.drum2 {
+    top: 326px;
+    left: 262px;
+    width: 315px;
+    height: 286px;
+    border-radius: 52%;
+}
+
+.drum3 {
+	top: 175px;
+    left: 246px;
+    width: 155px;
+    height: 136px;
+}
+
+.drum4 {
+	top: 175px;
+    right: 241px;
+    width: 141px;
+    height: 124px;
+}
+
+.drum5 {
+	top: 274px;
+    right: 176px;
+    width: 158px;
+    height: 61px;
+}
+
+.cymbal1 {
+	top: 191px;
+    right: 75px;
+    width: 137px;
+    height: 57px;
+}
+
+.cymbal2 {
+	top: 61px;
+    left: 59px;
+    width: 180px;
+    height: 70px;
+}
+
+
+.music_wrap {
+	position: fixed;
+	top: 100px;
+    left: 0;
+    width: 230px;
+
+    color: #fff;
+    font: 15px Tahoma, sans-serif;
+}
+
+.music_wrap h4 {
+	margin-bottom: 15px;
+
+	color: #fff;
+	font: 15px Tahoma, sans-serif;
+}
+
+.music_wrap audio {
 	width: 100%;
-
-	color: #fff;
-	font: 30px Tahoma, sans-serif;
-	text-align: center;
 }
 
-.wrap span {
-	position: absolute;
-	top: calc(50% - 25.5px);
-	left: calc(50% - 22.5px);
-	z-index: 1;
-	display: inline-block;
-	width: 46px;
+.music_wrap div {
+	border-bottom: 2px solid darkgray;
+	padding: 5px;
+	margin-top: 5px;
 
-	color: #fff;
-	font: 42px Tahoma, sans-serif;
-	text-align: center;
-	/*display: inline-block;*/
-	/*display: flex;
-	flex-flow: row nowrap;
-	justify-content: center;
-	align-items: center;*/
 }
-
-canvas {
-	background: rgba(156, 145, 188, 0.7);
-	border-radius: 50%;
-    /*border: 3px solid #efc3cb;*/
-    box-shadow: 0 0 20px 2px #efc3cb;
-	display: inline-block;
-	transform: rotate(-90deg);
-}
-
-
-
-
-
-
-
-
-
+/*.music_wrap p {
+	margin-bottom: 5px;
+}*/
 
